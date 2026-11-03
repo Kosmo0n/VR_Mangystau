@@ -88,6 +88,8 @@ function initMobileMenu() {
     backdrop = document.createElement('div');
     backdrop.id = 'navBackdrop';
     backdrop.className = 'nav-backdrop';
+  }
+  if (backdrop.parentElement !== document.body) {
     document.body.appendChild(backdrop);
   }
 
@@ -181,7 +183,7 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
+          entry.target.classList.add('animate-on-scroll--visible');
           observer.unobserve(entry.target);
         }
       });
@@ -192,7 +194,7 @@ function initScrollAnimations() {
 
     animElements.forEach(el => observer.observe(el));
   } else {
-    animElements.forEach(el => el.classList.add('animated'));
+    animElements.forEach(el => el.classList.add('animate-on-scroll--visible'));
   }
 }
 
