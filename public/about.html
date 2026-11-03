@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Біз туралы | VR Mangystau</title>
+  <meta name="description" content="VR Mangystau жобасы туралы: мақсаты, миссиясы және Маңғыстау өңірін насихаттау мүмкіндіктері.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="VR Mangystau Басты бет">
+        <span class="logo-vr">VR</span>
+        <span class="logo-text">Mangystau</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Басты навигация">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Басты бет</a>
+          </li>
+          <li class="nav-item nav-dropdown" id="catalogDropdown">
+            <a href="/catalog.html" class="nav-link nav-dropdown-toggle" id="catalogDropdownToggle" aria-haspopup="true" aria-expanded="false">
+              <span>Каталог</span>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu" id="catalogDropdownMenu" aria-label="Каталог бөлімдері">
+              <li>
+                <a href="/catalog.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                  <span>Маңғыстауға саяхат</span>
+                </a>
+              </li>
+              <li>
+                <a href="/education.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.5 0-3 .5-3 2v1c0 .6-.4 1-1 1H6c-1 0-2 .5-2 2v2c0 1 .5 2 1 3l2 3c.5 1 1 2 1 3v3c0 .6.4 1 1 1h8c.6 0 1-.4 1-1v-3c0-1 .5-2 1-3l2-3c.5-1 1-2 1-3V8c0-1.5-1-2-2-2h-2c-.6 0-1-.4-1-1V4c0-1.5-1.5-2-3-2z"/></svg>
+                  <span>Мұнай-газ саласындағы оқыту</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/vr-experience.html" class="nav-link">VR тәжірибе</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link active">Біз туралы</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Байланыс</a>
+          </li>
+        </ul>
+        <div class="nav-mobile-auth">
+          <a href="/login.html" class="btn btn-primary btn-full mobile-auth-btn">Кіру</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/login.html" class="btn btn-primary btn-sm header-login-btn" id="authBtn">Кіру</a>
+        <button class="hamburger" id="hamburger" aria-label="Мәзірді ашу/жабу" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-badge">💡 Университеттік цифрлық жоба</div>
+        <h1 class="page-hero-title">VR Mangystau <span class="text-accent">туралы</span></h1>
+        <p class="page-hero-subtitle">
+          Маңғыстау облысының қайталанбас табиғи мұрасын дәріптеуге және мұнай-газ саласында заманауи интерактивті білім беруге арналған веб-платформа.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section animate-on-scroll">
+      <div class="container">
+        <div class="grid grid-2 items-center" style="gap: 48px;">
+          <div>
+            <span class="badge badge-accent mb-sm">Жоба тұжырымдамасы</span>
+            <h2 class="text-2xl mb-md">Табиғат ғажайыптары мен заманауи білімнің тоғысы</h2>
+            <p class="text-secondary mb-md">
+              <strong>VR Mangystau</strong> — Маңғыстау түбегінің туристік тартымдылығын арттыру және өңірдің өндірістік әлеуетін таныту мақсатында әзірленген білім беру-ақпараттық жобасы. Біз өлкеміздің табиғи құндылықтарын виртуалды технологиялар арқылы бүкіл әлемге қолжетімді етуді көздейміз.
+            </p>
+            <p class="text-secondary mb-md">
+              Сайт екі негізгі бағытты біріктіреді: біріншіден, Бозжыра, Шерқала және Каспий жағалауы сияқты керемет нысандарды 360° форматында таныстыратын туристік бағыт; екіншіден, өңір экономикасының тірегі саналатын мұнай-газ өнеркәсібінің негіздерін үйрететін онлайн оқу орталығы.
+            </p>
+            <div class="d-flex" style="gap: 16px;">
+              <a href="/catalog.html" class="btn btn-primary">Каталогты көру</a>
+              <a href="/education.html" class="btn btn-secondary">Оқу курстары</a>
+            </div>
+          </div>
+          <div class="card p-xl" style="background: linear-gradient(135deg, #192936 0%, #121F2C 100%); border: 1px solid var(--color-border-card);">
+            <h3 class="text-xl mb-md text-accent">Басты миссиямыз</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+              <li class="d-flex items-center" style="gap: 12px;">
+                <span style="color: var(--color-accent); font-size: 1.25rem;">✓</span>
+                <span>Маңғыстаудың экотуристік әлеуетін цифрландыру</span>
+              </li>
+              <li class="d-flex items-center" style="gap: 12px;">
+                <span style="color: var(--color-accent); font-size: 1.25rem;">✓</span>
+                <span>Жастарға мұнай-газ инженерлік мамандықтарын насихаттау</span>
+              </li>
+              <li class="d-flex items-center" style="gap: 12px;">
+                <span style="color: var(--color-accent); font-size: 1.25rem;">✓</span>
+                <span>Интерактивті 360° панорамалар арқылы қашықтан зерттеу</span>
+              </li>
+              <li class="d-flex items-center" style="gap: 12px;">
+                <span style="color: var(--color-accent); font-size: 1.25rem;">✓</span>
+                <span>Студенттер мен мектеп түлектерінің білімін бағалау жүйесі</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY NUMBERS / REGIONAL HERITAGE -->
+    <section class="section bg-secondary animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Маңғыстау — <span class="text-accent">Ашық аспан астындағы мұражай</span></h2>
+          <p class="section-subtitle">Өңірдің тарихи-географиялық және өндірістік ерекшеліктері</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card p-xl">
+            <div class="text-accent" style="font-size: 2.5rem; font-weight: 700; font-family: var(--font-heading); margin-bottom: 8px;">362</div>
+            <h3 class="mb-xs">Әулиелі мекен</h3>
+            <p class="text-secondary text-sm">
+              Маңғыстау «362 әулие мекендеген киелі өлке» деп аталады. Бекет ата, Шопан ата, Шақпақ ата сияқты жерасты мешіттері орта ғасырлық сәулет өнерінің жауһары.
+            </p>
+          </div>
+
+          <div class="card p-xl">
+            <div class="text-accent" style="font-size: 2.5rem; font-weight: 700; font-family: var(--font-heading); margin-bottom: 8px;">25 млн</div>
+            <h3 class="mb-xs">Жылдық тарих</h3>
+            <p class="text-secondary text-sm">
+              Үстірт жазығы миллиондаған жылдар бұрын Тетис мұхиты болған. Бүгінгі Бозжыра мен Айрақты шыңдары — ежелгі мұхит түбінің табиғи мүсіндері.
+            </p>
+          </div>
+
+          <div class="card p-xl">
+            <div class="text-accent" style="font-size: 2.5rem; font-weight: 700; font-family: var(--font-heading); margin-bottom: 8px;">1961</div>
+            <h3 class="mb-xs">Мұнай дәуірінің басталуы</h3>
+            <p class="text-secondary text-sm">
+              Жетібай кен орнында алғашқы мұнай фонтаны атқылап, Маңғыстау Қазақстанның ірі мұнай-газ өнеркәсіптік орталығына айналды.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK & ARCHITECTURE -->
+    <section class="section animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Қолданылған <span class="text-accent">технологиялар</span></h2>
+          <p class="section-subtitle">Жобаның сенімді, жылдам және жеңіл жұмыс істеуі үшін таңдалған стек</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card p-lg text-center">
+            <div style="font-size: 2rem; margin-bottom: 8px;">⚡</div>
+            <h4>Node.js & Express</h4>
+            <p class="text-secondary text-xs mt-xs">Жылдам REST API сервері, баптаулары оңай маршруттау мен сессиялар жүйесі.</p>
+          </div>
+          <div class="card p-lg text-center">
+            <div style="font-size: 2rem; margin-bottom: 8px;">💾</div>
+            <h4>SQLite деректер қоры</h4>
+            <p class="text-secondary text-xs mt-xs">Жергілікті реляциялық деректер базасы, файлдық сақтау, жоғары өнімділік.</p>
+          </div>
+          <div class="card p-lg text-center">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🎨</div>
+            <h4>Таза HTML5 & CSS3</h4>
+            <p class="text-secondary text-xs mt-xs">Артық фреймворктерсіз, Responsive Design, CSS Grid және заманауи қараңғы тақырып.</p>
+          </div>
+          <div class="card p-lg text-center">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🌐</div>
+            <h4>YouTube 360° Embed</h4>
+            <p class="text-secondary text-xs mt-xs">Қосымша ауыр 3D-плагиндерсіз, тікелей браузерде интерактивті панорамаларды қарау.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSITY / PROJECT DETAILS -->
+    <section class="section bg-secondary text-center">
+      <div class="container">
+        <div style="max-width: 700px; margin: 0 auto;">
+          <span class="badge badge-accent mb-sm">Университеттік қорғауға арналған</span>
+          <h2 class="text-2xl mb-md">VR Mangystau дипломдық/курстық жобасы</h2>
+          <p class="text-secondary mb-lg">
+            Жоба өлкетану туризмін дамытудағы IT шешімдердің маңыздылығын және интерактивті білім беру платформаларын әзірлеудің толық циклін көрсетеді.
+          </p>
+          <a href="/contact.html" class="btn btn-primary">Сұрақ қою немесе байланысу</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo footer-logo"><span class="logo-vr">VR</span> Mangystau</a>
+          <p class="footer-desc">Маңғыстау облысының табиғи мұрасын таныстыратын және заманауи технологиялар арқылы білім алуға мүмкіндік беретін платформа.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="/">Басты бет</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/education.html">Оқыту</a></li>
+            <li><a href="/vr-experience.html">VR тәжірибе</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Жоба</h4>
+          <ul class="footer-links">
+            <li><a href="/about.html">Біз туралы</a></li>
+            <li><a href="/contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Байланыс</h4>
+          <p class="footer-contact">Ақтау қ., Маңғыстау облысы</p>
+          <p class="footer-contact">info@vrmangystau.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 VR Mangystau. Барлық құқықтар қорғалған.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification" id="notification"></div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
+

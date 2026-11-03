@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR тәжірибе | VR Mangystau</title>
+  <meta name="description" content="Маңғыстау облысының керемет табиғатын 360° форматтағы VR бейнелер арқылы тамашалаңыз.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="VR Mangystau Басты бет">
+        <span class="logo-vr">VR</span>
+        <span class="logo-text">Mangystau</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Басты навигация">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Басты бет</a>
+          </li>
+          <li class="nav-item nav-dropdown" id="catalogDropdown">
+            <a href="/catalog.html" class="nav-link nav-dropdown-toggle" id="catalogDropdownToggle" aria-haspopup="true" aria-expanded="false">
+              <span>Каталог</span>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu" id="catalogDropdownMenu" aria-label="Каталог бөлімдері">
+              <li>
+                <a href="/catalog.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                  <span>Маңғыстауға саяхат</span>
+                </a>
+              </li>
+              <li>
+                <a href="/education.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.5 0-3 .5-3 2v1c0 .6-.4 1-1 1H6c-1 0-2 .5-2 2v2c0 1 .5 2 1 3l2 3c.5 1 1 2 1 3v3c0 .6.4 1 1 1h8c.6 0 1-.4 1-1v-3c0-1 .5-2 1-3l2-3c.5-1 1-2 1-3V8c0-1.5-1-2-2-2h-2c-.6 0-1-.4-1-1V4c0-1.5-1.5-2-3-2z"/></svg>
+                  <span>Мұнай-газ саласындағы оқыту</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/vr-experience.html" class="nav-link active">VR тәжірибе</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link">Біз туралы</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Байланыс</a>
+          </li>
+        </ul>
+        <div class="nav-mobile-auth">
+          <a href="/login.html" class="btn btn-primary btn-full mobile-auth-btn">Кіру</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/login.html" class="btn btn-primary btn-sm header-login-btn" id="authBtn">Кіру</a>
+        <button class="hamburger" id="hamburger" aria-label="Мәзірді ашу/жабу" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-badge">🥽 360° Виртуалды шындық</div>
+        <h1 class="page-hero-title">Маңғыстауды <span class="text-accent">360° форматында</span> тамашалаңыз</h1>
+        <p class="page-hero-subtitle">
+          Заманауи панорамалық бейнелер арқылы Үстірт жазығы мен Бозжыра шатқалының ғажайып кеңістігіне сүңгіңіз. Үйден шықпай-ақ өлке табиғатын толық сезініңіз.
+        </p>
+      </div>
+    </section>
+
+    <!-- VR INSTRUCTIONS SECTION -->
+    <section class="section animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">360° бейнені қалай <span class="text-accent">басқаруға болады?</span></h2>
+          <p class="section-subtitle">Стандартты YouTube плейері көру бұрышын еркін бұруға мүмкіндік береді</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card p-xl text-center">
+            <div class="icon-circle mb-md" style="margin: 0 auto; width: 64px; height: 64px; background: rgba(112, 214, 169, 0.12); color: var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="7"/><path d="M12 6v4"/></svg>
+            </div>
+            <h3 class="mb-sm text-lg">Компьютерде</h3>
+            <p class="text-secondary text-sm">
+              Тінтуірдің сол жақ батырмасын басып тұрып, бейнені жан-жаққа, жоғары немесе төмен қарай жылжытыңыз. Сондай-ақ W, A, S, D пернелерін де қолдануға болады.
+            </p>
+          </div>
+
+          <div class="card p-xl text-center">
+            <div class="icon-circle mb-md" style="margin: 0 auto; width: 64px; height: 64px; background: rgba(112, 214, 169, 0.12); color: var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 class="mb-sm text-lg">Смартфонда</h3>
+            <p class="text-secondary text-sm">
+              Саусақпен экранды сүйреңіз немесе смартфонды кеңістікте бұрыңыз — гироскоп датчигі көзқарасыңызды автоматты түрде қайталайды.
+            </p>
+          </div>
+
+          <div class="card p-xl text-center">
+            <div class="icon-circle mb-md" style="margin: 0 auto; width: 64px; height: 64px; background: rgba(112, 214, 169, 0.12); color: var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="12.5" r="3.5"/><circle cx="16.5" cy="12.5" r="3.5"/><path d="M2 10a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4v-4z"/><path d="M11 12.5h2"/></svg>
+            </div>
+            <h3 class="mb-sm text-lg">VR көзілдірікпен</h3>
+            <p class="text-secondary text-sm">
+              YouTube қолданбасында VR белгішесін басып, смартфонды Cardboard немесе кез келген VR гарнитурасына орнатыңыз.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VR VIDEOS SHOWCASE -->
+    <section class="section bg-secondary animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Виртуалды <span class="text-accent">турлар</span></h2>
+          <p class="section-subtitle">Қазақстан мен Маңғыстау өңірінің табиғи мұрасына арналған интерактивті бейнелер</p>
+        </div>
+
+        <!-- VIDEO 1 -->
+        <div class="card mb-2xl" style="overflow: hidden;">
+          <div class="p-lg">
+            <div class="d-flex justify-between items-center mb-sm">
+              <span class="badge badge-accent">360° Панорама</span>
+              <span class="text-secondary text-sm">HD / 4K қолдайды</span>
+            </div>
+            <h3 class="text-xl mb-xs">Маңғыстау және Қазақстанның киелі табиғаты — 360° Виртуалды шолу</h3>
+            <p class="text-secondary mb-md">
+              Үстірт жазығының биік құздары мен марсиандық пейзаждарын құс ұшар биіктіктен 360 градустық қамтумен тамашалаңыз.
+            </p>
+          </div>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/e3YJkDMnqZI?rel=0&enablejsapi=1" 
+              title="Маңғыстау 360° VR саяхаты" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="card mb-2xl" style="overflow: hidden;">
+          <div class="p-lg">
+            <div class="d-flex justify-between items-center mb-sm">
+              <span class="badge badge-accent">360° Интерактивті бейне</span>
+              <span class="text-secondary text-sm">VR Headset Friendly</span>
+            </div>
+            <h3 class="text-xl mb-xs">Бозжыра және Шатқалдар ландшафты — 360° Панорамалық рейс</h3>
+            <p class="text-secondary mb-md">
+              Ақ бор жыныстары мен ерекше табиғи мүсіндердің арасымен ұшып өтіп, табиғат шеберлігіне өз көзіңізбен куә болыңыз.
+            </p>
+          </div>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/GtRPx5Pj1YM?rel=0&enablejsapi=1" 
+              title="Қазақстан каньондары 360°" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <!-- VIDEO 3: Dynamic slot or configurable video -->
+        <div class="card" style="overflow: hidden;">
+          <div class="p-lg">
+            <div class="d-flex justify-between items-center mb-sm">
+              <span class="badge" style="background: rgba(255,255,255,0.08); color: var(--color-text-secondary);">Қосымша бейне</span>
+              <span class="text-secondary text-sm">360° Виртуалды тур</span>
+            </div>
+            <h3 class="text-xl mb-xs">Каспий теңізі мен Маңғыстау жағалауының виртуалды көрінісі</h3>
+            <p class="text-secondary mb-md">
+              Каспийдің көгілдір суы мен Ақтау қаласының жартасты жағалауын 360° интерактивті режимінде тамашалаңыз.
+            </p>
+          </div>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/e3YJkDMnqZI?start=45&rel=0" 
+              title="Каспий жағалауы VR" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="section animate-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Виртуалды туризмнің <span class="text-accent">артықшылықтары</span></h2>
+          <p class="section-subtitle">VR технологиясы саяхат пен білім алуда қандай жаңа мүмкіндіктер береді?</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card p-lg">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🏡</div>
+            <h4 class="mb-xs">Үйден шықпай саяхаттау</h4>
+            <p class="text-secondary text-sm">Қалаған уақытта кез келген қашықтықтағы нысандарды тікелей браузер арқылы аралаңыз.</p>
+          </div>
+          <div class="card p-lg">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🛡️</div>
+            <h4 class="mb-xs">Қауіпсіз және жайлы</h4>
+            <p class="text-secondary text-sm">Жолдың қиындығы мен ауа райының қолайсыздығына қарамастан қауіпсіз зерттеу мүмкіндігі.</p>
+          </div>
+          <div class="card p-lg">
+            <div style="font-size: 2rem; margin-bottom: 12px;">📚</div>
+            <h4 class="mb-xs">Интерактивті білім беру</h4>
+            <p class="text-secondary text-sm">Теориялық оқу мен визуалды тәжірибені ұштастыратын студенттер мен оқушыларға арналған құрал.</p>
+          </div>
+          <div class="card p-lg">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🌱</div>
+            <h4 class="mb-xs">Экологиялық тазалық</h4>
+            <p class="text-secondary text-sm">Табиғатқа ешқандай антропогендік зиян келтірмей, биоалуантүрлілікті сақтауға үлес қосасыз.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-secondary text-center">
+      <div class="container">
+        <h2 class="text-2xl mb-md">Маңғыстаудың табиғи нысандарын толық зерттегіңіз келе ме?</h2>
+        <p class="text-secondary mb-xl" style="max-width: 600px; margin: 0 auto 24px;">
+          Біздің туристік каталогтан әрбір тарихи және табиғи орынның толық сипаттамасымен танысыңыз.
+        </p>
+        <a href="/catalog.html" class="btn btn-primary btn-lg">Каталогты қарау</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo footer-logo"><span class="logo-vr">VR</span> Mangystau</a>
+          <p class="footer-desc">Маңғыстау облысының табиғи мұрасын таныстыратын және заманауи технологиялар арқылы білім алуға мүмкіндік беретін платформа.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="/">Басты бет</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/education.html">Оқыту</a></li>
+            <li><a href="/vr-experience.html">VR тәжірибе</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Жоба</h4>
+          <ul class="footer-links">
+            <li><a href="/about.html">Біз туралы</a></li>
+            <li><a href="/contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Байланыс</h4>
+          <p class="footer-contact">Ақтау қ., Маңғыстау облысы</p>
+          <p class="footer-contact">info@vrmangystau.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 VR Mangystau. Барлық құқықтар қорғалған.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification" id="notification"></div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль | VR Mangystau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="VR Mangystau Басты бет">
+        <span class="logo-vr">VR</span>
+        <span class="logo-text">Mangystau</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Басты навигация">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Басты бет</a>
+          </li>
+          <li class="nav-item nav-dropdown" id="catalogDropdown">
+            <a href="/catalog.html" class="nav-link nav-dropdown-toggle" id="catalogDropdownToggle" aria-haspopup="true" aria-expanded="false">
+              <span>Каталог</span>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu" id="catalogDropdownMenu" aria-label="Каталог бөлімдері">
+              <li>
+                <a href="/catalog.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                  <span>Маңғыстауға саяхат</span>
+                </a>
+              </li>
+              <li>
+                <a href="/education.html" class="dropdown-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.5 0-3 .5-3 2v1c0 .6-.4 1-1 1H6c-1 0-2 .5-2 2v2c0 1 .5 2 1 3l2 3c.5 1 1 2 1 3v3c0 .6.4 1 1 1h8c.6 0 1-.4 1-1v-3c0-1 .5-2 1-3l2-3c.5-1 1-2 1-3V8c0-1.5-1-2-2-2h-2c-.6 0-1-.4-1-1V4c0-1.5-1.5-2-3-2z"/></svg>
+                  <span>Мұнай-газ саласындағы оқыту</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/vr-experience.html" class="nav-link">VR тәжірибе</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link">Біз туралы</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Байланыс</a>
+          </li>
+        </ul>
+        <div class="nav-mobile-auth">
+          <a href="/login.html" class="btn btn-primary btn-full mobile-auth-btn">Кіру</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/login.html" class="btn btn-primary btn-sm header-login-btn" id="authBtn">Кіру</a>
+        <button class="hamburger" id="hamburger" aria-label="Мәзірді ашу/жабу" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+  </header>
+
+  <main>
+    <!-- Profile Header -->
+    <section class="page-hero page-hero-compact">
+      <div class="container">
+        <div class="profile-header">
+          <div class="profile-avatar" id="profileAvatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="profile-info">
+            <h1 class="profile-name" id="userName">Пайдаланушы</h1>
+            <p class="profile-email" id="userEmail">email@example.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#70D6A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-value" id="completedCourses">0</div>
+              <div class="stat-label">Өтілген курстар саны</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#70D6A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-value" id="avgScore">0%</div>
+              <div class="stat-label">Тест нәтижелері</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#70D6A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-value" id="regDate">—</div>
+              <div class="stat-label">Тіркелген күні</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Results Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Тест нәтижелері</h2>
+
+        <div class="test-results-list" id="testResultsList">
+          <!-- Empty State -->
+          <div class="empty-state" id="emptyResults">
+            <div class="empty-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#A3B1BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h3>Тест нәтижелері жоқ</h3>
+            <p>Сіз әлі ешқандай тест тапсырған жоқсыз. Курстарды оқып, тест тапсырыңыз.</p>
+            <a href="/education.html" class="btn btn-primary">Курстарды қарау</a>
+          </div>
+
+          <!-- Results table (populated by JS) -->
+          <div class="results-table-wrapper" id="resultsTableWrapper" style="display: none;">
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th>Курс атауы</th>
+                  <th>Балл</th>
+                  <th>Пайыз</th>
+                  <th>Күні</th>
+                  <th>Әрекет</th>
+                </tr>
+              </thead>
+              <tbody id="resultsTableBody">
+                <!-- Rows populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Жылдам сілтемелер</h2>
+        <div class="quick-links-grid">
+
+          <a href="/education.html" class="quick-link-card">
+            <div class="quick-link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#70D6A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3 class="quick-link-title">Курстарды қарау</h3>
+            <p class="quick-link-desc">Мұнай-газ саласы бойынша курстарды оқу</p>
+          </a>
+
+          <a href="/catalog.html" class="quick-link-card">
+            <div class="quick-link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#70D6A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h3 class="quick-link-title">Каталогты қарау</h3>
+            <p class="quick-link-desc">Маңғыстаудың табиғи нысандарын зерттеу</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Logout -->
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <button class="btn btn-outline btn-danger" id="logoutBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+          Шығу
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo footer-logo"><span class="logo-vr">VR</span> Mangystau</a>
+          <p class="footer-desc">Маңғыстау облысының табиғи мұрасын таныстыратын және заманауи технологиялар арқылы білім алуға мүмкіндік беретін платформа.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="/">Басты бет</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/education.html">Оқыту</a></li>
+            <li><a href="/vr-experience.html">VR тәжірибе</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Жоба</h4>
+          <ul class="footer-links">
+            <li><a href="/about.html">Біз туралы</a></li>
+            <li><a href="/contact.html">Байланыс</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Байланыс</h4>
+          <p class="footer-contact">Ақтау қ., Маңғыстау облысы</p>
+          <p class="footer-contact">info@vrmangystau.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 VR Mangystau. Барлық құқықтар қорғалған.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification" id="notification"></div>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
